@@ -10,6 +10,7 @@ const fileToBase64 = (file: File): Promise<string> => {
 const generateResumeHTML = async (): Promise<string> => {
   // Get all inputs
   const nameInput = document.getElementById('name') as HTMLInputElement;
+  const aboutInput = document.getElementById('about-me') as HTMLTextAreaElement;
   const emailInput = document.getElementById('email') as HTMLInputElement;
   const phoneInput = document.getElementById('phone') as HTMLInputElement;
   const addressInput = document.getElementById('address') as HTMLTextAreaElement;
@@ -22,7 +23,6 @@ const generateResumeHTML = async (): Promise<string> => {
   const startDateInput = document.getElementById('start-date') as HTMLInputElement;
   const endDateInput = document.getElementById('end-date') as HTMLInputElement;
   const responsibilitiesInput = document.getElementById('responsibilities') as HTMLTextAreaElement;
-  const aboutInput = document.getElementById('about-me') as HTMLTextAreaElement;
   const photoInput = document.getElementById('photo') as HTMLInputElement | null;
 
   // Basic validation
